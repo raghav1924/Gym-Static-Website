@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@0,400;1,100&family=Ubuntu+Condensed&display=swap"
+        rel="stylesheet">
+    <style>
+        /* CSS reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(img/G.jpg);
+            color: white;
+            font-family: 'Ubuntu Condensed', sans-serif;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 22px;
+            left: 50px;
+        }
+
+        .left img {
+            width: 50px;
+            filter: invert(100%);
+            display: block;
+            margin: auto;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 16px;
+            font-size: 18px;
+        }
+
+        .mid {
+            display: block;
+            margin: 22px auto;
+            width: 40%;
+            /* border: 1px solid blue; */
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 1px solid yellow; */
+            position: absolute;
+            top: 38px;
+            right: 22px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 10px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(214, 214, 214);
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin: 0px 5px;
+            background-color: black;
+            color: white;
+            padding: 3px 11px;
+            border:none;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Ubuntu Condensed', sans-serif;
+        }
+
+        .btn:hover {
+            background-color: rgb(22, 22, 22);
+            font-size: 14px;
+            padding: 4px 13px;
+        }
+
+        .container {
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 75px;
+            margin: 55px 64px;
+            width: 33%;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 355px;
+            margin: 5px auto;
+            padding: 4px;
+            border: 1px solid black;
+            font-size: 19px;
+            border-radius: 9px;
+            font-family: 'Ubuntu Condensed', sans-serif;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container .btn {
+            display: block;
+            width: 88%;
+            margin: 16px auto;
+            font-size: 19px;
+            border: 0.5px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/D.png" alt="">
+            <div>Human Fitness</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Us Today!!!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
